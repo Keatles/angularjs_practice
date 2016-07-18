@@ -1,9 +1,11 @@
-/**
- * Created by kee on 2016-07-18.
- */
+'use strict';
 
-//定义'phonecatApp'
-var phonecatApp = angular.module('phonecatApp',[
-
-    'phoneList'
+// Define the `phonecatApp` module
+angular.module('phonecatApp', [
+  'ngAnimate',
+  'ngRoute',
+  'core',
+  'phoneDetail',
+  'phoneList',
 ]);
+

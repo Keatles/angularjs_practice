@@ -7,19 +7,19 @@
             </p>
             <p>
                 排序:
-                <select ng-mol="$ctrl.orderProp">
-                    <option value="name">字母顺序</option>
+                <select ng-model="$ctrl.orderProp">
+                    <option value="name">字母</option>
                     <option value="age">最近上市</option>
                 </select>
             </p>
         </div>
         <div class="col-md-10">
             <ul class="phones">
-                <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp">
-                    <a href="#/phones/{{phone.id}}" class="thumb">
-                        <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}">
+                <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
+                    <a href="#!/phones/{{phone.id}}" class="thumb">
+                        <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
                     </a>
-                    <span>{{phone.name}}</span>
+                    <a href="#!/phones/{{phone.id}}">{{phone.name}}</a>
                     <p>{{phone.snippet}}</p>
                 </li>
             </ul>

@@ -1,7 +1,4 @@
-/**
- * Created by kee on 2016-07-18.
- */
+'use strict';
 
-//定义'phoneList'
-
-angular.module('phoneList', []);
+// Define the `phoneList` module
+angular.module('phoneList', ['core.phone']);
